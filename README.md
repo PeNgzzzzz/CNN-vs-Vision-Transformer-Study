@@ -4,8 +4,6 @@ This project compares **Convolutional Neural Networks (ResNet-18)** and **Vision
 
 The notebook implements a unified PyTorch training pipeline and explores differences in **training dynamics, representation structure, and model behavior**.
 
----
-
 ## Models
 
 Two pretrained architectures are evaluated:
@@ -14,8 +12,6 @@ Two pretrained architectures are evaluated:
 - **ViT-B/16** – Vision Transformer with 16×16 patches
 
 Both models are adapted for new classification tasks by replacing the final classification layer.
-
----
 
 ## Datasets
 
@@ -27,8 +23,6 @@ Experiments are performed on multiple datasets:
 - EMNIST
 
 All images are resized to **224×224** and normalized using **ImageNet statistics** to match pretrained model requirements.
-
----
 
 ## Training Pipeline
 
@@ -43,8 +37,6 @@ Key components include:
 
 The same pipeline allows consistent comparison between CNN and transformer models.
 
----
-
 ## Neural Tangent Kernel (NTK) Analysis
 
 The project includes an empirical **Neural Tangent Kernel (NTK)** analysis to study training dynamics.
@@ -57,8 +49,6 @@ The NTK Gram matrix is computed by:
 
 This analysis provides insight into how model parameters influence learning behavior.
 
----
-
 ## Signal Propagation and Rank Analysis
 
 To understand representation structure inside the networks, intermediate activations are extracted and analyzed.
@@ -70,8 +60,6 @@ The notebook computes:
 - **effective rank of feature representations**
 
 This helps compare how CNNs and Vision Transformers compress or propagate information across layers.
-
----
 
 ## Experiments
 
@@ -86,8 +74,6 @@ Example experiment configuration:
 ("vit_b16", "cifar100")
 ```
 
----
-
 ## Notebook
 
 Main experiment notebook:
@@ -95,7 +81,6 @@ Main experiment notebook:
 
 CNNs_VITs.ipynb
 
----
 
 ## Environment
 
